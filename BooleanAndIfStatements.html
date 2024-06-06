@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+</head>
+<body>
+    <script>
+        document.write(3<5);
+        //boolean we can't write within single quotes('true')it will bwcome a string
+        document.write(typeof true);//boolean
+        document.write(typeof 'false');//string
+
+        document.write(5 === '5.00')//false
+        document.write(5 == '5.00')//true
+        document.write(5 === 5.00)//true
+        document.write(5 == 5.00)//true
+
+        if(false)
+        {
+            document.write(false);
+        }
+        else
+        {
+            document.write(true);
+        }
+
+        if(15<=16)
+        {
+            document.write('true');
+        }
+        else
+        {
+            document.write('false');
+        }
+
+        if(15<=16)
+        {
+            document.write('true');
+        }
+        else if(18>=19)
+        {
+            document.write('true');
+        }
+        else
+        {
+            document.write('false');
+        }
+    </script>
+</body>
+</html>
