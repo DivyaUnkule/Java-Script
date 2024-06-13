@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('hello'.length);
+        console.log('hello'.toUpperCase());//autoboxing-->hello is a string automatically get wrapped to an object
+   //autoboxing works with numbers and boolean values as well not works with null and undefined values
+
+   const object1={//object1 is reference stired inside computers memory
+       msg:'hello'
+   }
+   
+   object1.msg='good job!';//even if object is const but we can modify the value because it is stored as a reference
+   const object2=object1;//here we are not copying the objects we are copying the references
+   console.log(object1.msg);
+   console.log(object2===object1);//refernce copy that's why true
+   const object3={
+        msg:'good job!'
+   }
+   console.log(object3===object1);//even thogh values are same references are different
+   // const msg=object3.msg;
+    const {msg}=object3;//if propery and variable names are same then we can do destructuring
+    //in destructuring property msg is taken out from object3 and assigned to variable msg.
+    console.log(msg);
+   </script>
+    
+</body>
+</html>
